@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 import java.util.Date;
 
-//this class contains two methods which will be used by the main method in the alarmClock program.
+
 public class helperMethods {
 
-	//This method will loop through, waiting 50 seconds each loop, until all alarms have been set off.
+
 	@SuppressWarnings("deprecation")
 	public void waitForAlarms(ArrayList<Integer[]> alarms)
 	{
@@ -22,7 +22,7 @@ public class helperMethods {
 						break;
 					}
 				}
-				//wait 30 seconds, so as not to run the loop too often.
+			
 				try {
 					Thread.sleep(30000);
 				} catch (InterruptedException e) {
@@ -32,8 +32,7 @@ public class helperMethods {
 		}
 	}
 
-	//this class will take in a string and return an int[] contains the time
-	//the int in position 0 is the hrs, and the number in position 1 is the minutes
+
 	public Integer[] stringToTime(String time)
 	{
 		String hrs = time.charAt(0) + "" + time.charAt(1);
